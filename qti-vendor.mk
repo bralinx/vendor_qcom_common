@@ -21,5 +21,7 @@ PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/bin,system/bin)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/etc,system/etc)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/lib,system/lib)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/lib64,system/lib64)

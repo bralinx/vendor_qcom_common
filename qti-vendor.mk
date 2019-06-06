@@ -21,5 +21,13 @@ PRODUCT_BOOT_JARS += \
     QPerformance \
     UxPerformance
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/bin,system/bin)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/etc/init,system/etc/init)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/lib,system/lib)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/lib64,system/lib64)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/vendor/bin/hw,$(TARGET_COPY_OUT_VENDOR)/bin/hw)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/vendor/etc/init,$(TARGET_COPY_OUT_VENDOR)/etc/init)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/vendor/lib,$(TARGET_COPY_OUT_VENDOR)/lib)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/vendor/lib/hw,$(TARGET_COPY_OUT_VENDOR)/lib/hw)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/vendor/lib64,$(TARGET_COPY_OUT_VENDOR)/lib64)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/qcom/common/proprietary/vendor/lib64/hw,$(TARGET_COPY_OUT_VENDOR)/lib64/hw)
